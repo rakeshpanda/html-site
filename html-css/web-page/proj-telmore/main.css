@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: OpenSansRegular, sans-serif;
+  font-weight: 400;
+  background: #002eb7;
+  margin: 0;
+  min-width: 450px;
+}
+@media (max-width: 1060px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.l-header__block {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 1060px) {
+  .l-header__block {
+    width: 100%;
+  }
+}
+.l-header__block h1 {
+  font-family: OpenSansExtraBold, sans-serif;
+  color: #ffa0d4;
+  font-weight: 900;
+  letter-spacing: 0.8em;
+  margin-left: 2em;
+}
+@media (max-width: 1060px) {
+  .l-header__block h1 {
+    margin-left: 0.2em;
+    letter-spacing: 0.6em;
+  }
+}
+.l-header__menu-bar {
+  margin-left: auto;
+}
+.l-header__nav-bar {
+  background: #1e57ff;
+}
+@media (max-width: 1060px) {
+  .l-header__nav-bar {
+    display: none;
+  }
+}
+.l-header__nav-menu {
+  width: 80%;
+  margin: auto;
+}
+
+.l-header__menu-items li,
+.l-header__nav-items li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2em;
+}
+@media (max-width: 1060px) {
+  .l-header__menu-items li,
+.l-header__nav-items li {
+    padding: 0.2em;
+  }
+}
+.l-header__menu-items li:hover,
+.l-header__nav-items li:hover {
+  background: #1e57ff;
+}
+
+.l-header__nav-items li {
+  padding: 1em;
+}
+@media (max-width: 1060px) {
+  .l-header__nav-items li {
+    padding: 0.5em;
+  }
+}
+.l-header__nav-items li a {
+  font-family: OpenSansBold, sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.l-header__nav-items li a:hover {
+  color: #fbba1e;
+}
+
+.c-signup {
+  background: #000000;
+  padding: 1em;
+}
+@media (max-width: 1060px) {
+  .c-signup {
+    padding: 0.2em;
+  }
+}
+.c-signup__contents {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-signup__btn {
+  padding: 1em;
+  font-size: 1em;
+  background: #ffa0d4;
+  margin: 1em 0;
+}
+.c-signup__btn:hover {
+  background: #ff6dbd;
+}
+.c-signup__subtext {
+  width: 80%;
+  font-size: 0.8em;
+  padding: 1em;
+  text-align: center;
+  margin: auto;
+}
+@media (max-width: 1060px) {
+  .c-signup__subtext {
+    width: 100%;
+  }
+}
+
+.c-offers {
+  background: white;
+  color: #002eb7;
+  height: 26em;
+  text-align: center;
+  padding: 2em;
+}
+@media (max-width: 1060px) {
+  .c-offers {
+    padding: 1em;
+  }
+}
+.c-offers__product-title {
+  width: 80%;
+  margin: 0 auto 2em;
+}
+@media (max-width: 1060px) {
+  .c-offers__product-title {
+    width: 100%;
+    margin: 0 auto 0.5em;
+  }
+}
+@media (max-width: 1060px) {
+  .c-offers__products {
+    font-size: 0.8em;
+  }
+}
+.c-offers__products ul {
+  opacity: 0;
+  animation: animate 2000ms 1.5s forwards;
+}
+.c-offers h1 {
+  font-family: OpenSansExtraBold, sans-serif;
+  font-size: 2.2em;
+  font-weight: 900;
+}
+@media (max-width: 1060px) {
+  .c-offers h1 {
+    font-size: 1.2em;
+  }
+}
+.c-offers__product-list {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  justify-content: space-evenly;
+}
+@media (max-width: 1060px) {
+  .c-offers__product-list {
+    grid-template-columns: repeat(2, 4fr);
+    grid-row-gap: 1em;
+  }
+}
+.c-offers__product-list h2 {
+  font-size: 1em;
+  font-weight: 900;
+  font-family: OpenSansExtraBold, sans-serif;
+}
+@media (max-width: 1060px) {
+  .c-offers__product-list h2 {
+    font-size: 0.8em;
+  }
+}
+.c-offers__product-list div ul li a {
+  color: #002eb7;
+  text-decoration: underline;
+}
+.c-offers__product-list div ul li a:hover {
+  text-decoration: none;
+}
+
+.c-advertise {
+  background: #00ca62;
+  height: 25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-bottom: 5rem;
+}
+
+.l-footer {
+  width: 80%;
+  margin: auto;
+  color: white;
+  display: grid;
+  font-size: 0.8em;
+  line-height: 2em;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+@media (max-width: 1060px) {
+  .l-footer {
+    grid-template-columns: repeat(2, 4fr);
+  }
+}
+.l-footer div ul li a:hover {
+  color: #fbba1e;
+}
+
+.l-footer__titles {
+  font-family: OpenSansExtraBold, sans-serif;
+  font-weight: 700;
+  margin-left: 2em;
+  font-size: 1.5em;
+}
+@media (max-width: 1060px) {
+  .l-footer__titles {
+    margin-left: 0.2em;
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: translateX(15rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
